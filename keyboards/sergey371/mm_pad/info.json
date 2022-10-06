@@ -2,7 +2,7 @@
     "manufacturer": "Sergey A. Kozlov",
     "keyboard_name": "sergey371/mm_pad",
     "maintainer": "Sergey371",
-    "bootloader": "atmel-dfu",
+    "bootloader": "caterina",
     "features": {
         "bootmagic": true,
         "command": false,
