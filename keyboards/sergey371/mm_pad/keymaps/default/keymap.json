@@ -1,0 +1,10 @@
+{
+  "keyboard": "sergey371/mm_pad",
+  "keymap": "default",
+  "layout": "LAYOUT",
+  "layers": [
+    [
+      "KC_MRWD", "KC_MPLY", "KC_MFFD","KC_MUTE"
+    ]
+  ]
+}
