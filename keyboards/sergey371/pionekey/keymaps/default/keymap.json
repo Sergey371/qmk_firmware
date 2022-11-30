@@ -1,0 +1,10 @@
+{
+  "keyboard": "sergey371/pionekey",
+  "keymap": "default",
+  "layout": "LAYOUT",
+  "layers": [
+    [
+      "KC_A"
+    ]
+  ]
+}
