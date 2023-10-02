@@ -17,7 +17,7 @@
 #include QMK_KEYBOARD_H
 
 enum custom_keycodes {
-    MB3,
+    MB3 = SAFE_RANGE,
     MB4,
     MB5,
     MB6,
