@@ -27,6 +27,7 @@ enum custom_keycodes {
     MB10,
     MB11,
     MB12,
+    MB28,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -35,9 +36,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB3 is pressed
             for(int i=1; i<=3; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB3 is released
         }
@@ -46,9 +47,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB4 is pressed
             for(int i=1; i<=4; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB4 is released
         }
@@ -57,9 +58,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB5 is pressed
             for(int i=1; i<=5; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB5 is released
         }
@@ -68,9 +69,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB6 is pressed
             for(int i=1; i<=6; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB6 is released
         }
@@ -79,9 +80,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB7 is pressed
             for(int i=1; i<=7; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB7 is released
         }
@@ -90,9 +91,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB8 is pressed
             for(int i=1; i<=8; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB8 is released
         }
@@ -101,9 +102,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB9 is pressed
             for(int i=1; i<=9; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB9 is released
         }
@@ -112,8 +113,8 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB10 is pressed
             for(int i=1; i<=10; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50); 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
             }
         } else {
             // when keycode MB10 is released
@@ -123,9 +124,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB11 is pressed
             for(int i=1; i<=11; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB11 is released
         }
@@ -134,11 +135,22 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         if (record->event.pressed) {
             // when keycode MB12 is pressed
             for(int i=1; i<=12; i++) {
-                tap_code_delay(KC_SPC, 50);
-                _delay_ms(50);
-            } 
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
         } else {
             // when keycode MB12 is released
+        }
+        break;
+    case MB28:
+        if (record->event.pressed) {
+            // when keycode MB28 is pressed
+            for(int i=1; i<=28; i++) {
+                tap_code_delay(KC_SPC, 30);
+                _delay_ms(30);
+            }
+        } else {
+            // when keycode MB28 is released
         }
         break;
     }
@@ -161,7 +173,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______,                            _______,                     MO(2), _______, KC_HOME, KC_PGDN, KC_END
     ),
     [2] = LAYOUT_60_iso_arrow(
-        _______, _______, _______,     MB3,     MB4,     MB5,     MB6,     MB7,     MB8,     MB9,    MB10,    MB11,    MB12, _______,
+        _______, _______, _______,     MB3,     MB4,     MB5,     MB6,     MB7,     MB8,     MB9,    MB10,    MB11,    MB12,    MB28,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
