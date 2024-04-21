@@ -170,7 +170,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, RGB_TOG, RGB_MOD, RGB_HUI, RGB_SAI, RGB_VAI, KC_PSCR, KC_SCRL, KC_PAUS, _______, _______, _______, _______,
         _______, _______, _______, RGB_HUD, RGB_SAD, RGB_VAD,  KC_INS, KC_HOME, KC_PGUP, _______, _______, _______, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, NK_TOGG, _______, _______, _______, _______, KC_PGUP, _______,
-        _______, _______, _______,                            _______,                     MO(2), _______, KC_HOME, KC_PGDN, KC_END
+        KC_RCTL, _______, _______,                            _______,                     MO(2), _______, KC_HOME, KC_PGDN, KC_END
     ),
     [2] = LAYOUT_60_iso_arrow(
         _______, _______, _______,     MB3,     MB4,     MB5,     MB6,     MB7,     MB8,     MB9,    MB10,    MB11,    MB12,    MB28,
